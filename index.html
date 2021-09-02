@@ -1,0 +1,93 @@
+	<!doctype html>
+	<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>My PC HTML Attempt</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+
+	<body onkeydown="button(event)">
+		<h1 id="main-heading">Welcome to an unfortunate!!</h1>
+		<p id="main-p" onclick="colorMe(this)">
+			<b> That nap is crap</b></p>
+		<i class="glyphicon glyphicon-cloud" ></i>
+		<p id="buttonboy" onclick="majik('pop-up')">contact me</p>
+		<div id="pop-up">ewwww cheese touch!</div>
+
+		<div class="apple" id="apple">
+			<div class="apple-top-menu">
+				<img src="images/apple.png" alt="apple software logo">
+				<p><strong>Apple Software Updater</strong></p>
+				<ul>
+					<li title="Minimize" onclick="mini()">&#9866</li>
+					<li title="Maximize" onclick="maxi()">&#9744</li>
+					<li title="Close" onclick="majik('apple')">X</li>
+				</ul>
+			</div>
+			<div id="apple-mini">
+				<h2>software update needed:</h2>
+				<div class="apple-content">
+					<p>
+						<strong>APPLE INC.</br>
+							SOFTWARE LICENSE AGREEMENT FOR iCLOUD FOR WINDOWS
+							PLEASE READ THIS SOFTWARE LICENSE AGREEMENT (“LICENSE”) CAREFULLY BEFORE USING
+							THE APPLE SOFTWARE. BY USING THE APPLE SOFTWARE, YOU ARE AGREEING TO BE BOUND
+							BY THE TERMS OF THIS LICENSE. IF YOU DO NOT AGREE TO THE TERMS OF THIS LICENSE, DO
+							NOT INSTALL AND/OR USE THE APPLE SOFTWARE AND, IF PRESENTED WITH THE OPTION TO
+							“AGREE” OR “DISAGREE” TO THE TERMS, CLICK “DISAGREE”.</br></br>
+							IMPORTANT NOTE: </strong><i>To the extent that this software may be used to reproduce
+							materials, it
+							is
+							licensed to you only for reproduction of non-copyrighted materials, materials in which you own
+							the copyright, or materials you are authorized or legally permitted to reproduce. If you are
+							uncertain about your right to copy any material, you should contact your legal advisor.
+						</i></br></br>
+						<b>1. General.</b></br>
+						<b>A.</b>The Apple software, any third party software, documentation, interfaces, content, fonts,
+						extensions
+						and any data accompanying this License whether on disk, in read only memory, on any other media or
+						in
+						any other form (collectively the “Apple Software”) are licensed, not sold, to you by Apple Inc.
+						(“Apple”)
+						for use only under the terms of this License. Apple and/or Apple’s licensors retain ownership of
+						the
+						Apple Software itself and reserve all rights not expressly granted to you.</br>
+						<b>B.</b> Apple, at its discretion, may make available future upgrades or updates to the Apple
+						Software
+						for your
+						operating system. Upgrades and updates, if any, may not necessarily include all existing software
+						features or new features that Apple releases for newer, other versions of, or other operating
+						systems.
+						The terms of this License will govern any software upgrades or updates provided by Apple that
+						replace
+						and/or supplement the original Apple Software product, unless such upgrade or update is accompanied
+						by a separate license in which case the terms of that license will govern.</br>
+						<b>C.</b> Title and intellectual property rights in and to any content displayed by or accessed
+						through
+						the Apple
+						Software belongs to the respective content owner. Such content may be protected by copyright or
+						other
+						intellectual property laws and treaties, and may be subject to terms of use of the third party
+						providing
+						such content. This License does not grant you any rights to use such content nor does it guarantee
+						that
+						such content will continue to be available to you.
+					</p>
+				</div>
+				<div class="apple-footer">
+					<ul>
+						<li>Help</li>
+						<li>Cancel</li>
+						<li>Install</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="sketch.js"></script>
+	</body>
+
+	</html>

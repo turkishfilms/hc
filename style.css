@@ -1,0 +1,178 @@
+/*  */
+/*  */
+/*  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 8px;
+  padding: 0px;
+  background-color: rgba(40, 100, 20, 0.3);
+}
+
+p#main-p {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 4px;
+  word-spacing: 2em;
+  font-family: "Comic Sans MS", "Comic Sans", "cursive";
+}
+
+.glyphicon-cloud:hover{
+  animation: cloud 4s linear 0s infinite alternate;
+  /* animation-fill-mode: both; */
+}
+
+@keyframes cloud {
+  0% {
+    color: black
+  }
+
+  50% { 
+    transform: matrix(-1, 0, 0, -1, 25, 25);
+   } 
+
+  100% {
+    transform: matrix(0.99, -0.01,0.01,0.99, 50, 50);
+    color: red;
+    font-size: 64pt;
+  }
+}
+
+p#buttonboy {
+  text-align: center;
+  font: " Arial sans 3em;"
+}
+
+div#pop-up {
+  display: none;
+  max-width: 50%;
+  width: 50%;
+  height: 100px;
+  margin: auto;
+  background-color: antiquewhite;
+  transition: width 4s, background-color 4s;
+}
+
+div#pop-up:hover {
+  background-color: pink;
+  width: 10%;
+}
+
+h1#main-heading {
+  padding: 20px;
+  text-align: center;
+  font-family: helvetica;
+  color: #ee5085;
+  background-color: rgba(100, 100, 100, 0.5);
+  background-image: linear-gradient(to right, rgba(100, 100, 100, 1), rgba(92, 24, 24, 0.5))
+    /* background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) */
+}
+
+/* Apple POP-UP */
+.apple {
+  display: none;
+  max-width: 50%;
+  position: fixed;
+  left: 25%;
+  top: 210px;
+  margin: 0;
+  padding: 0;
+  box-shadow: 3px 3px 5px black;
+  border: 1px solid black;
+  background-color: rgba(210, 210, 210, 1.0);
+}
+
+.apple-top-menu {
+  height: 30px;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
+.apple-top-menu img {
+  float: left;
+  height: 29px;
+  width: inherit;
+}
+
+.apple-top-menu p {
+  padding: 5px;
+}
+
+.apple-top-menu ul {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  list-style-type: none;
+}
+
+.apple-top-menu ul li:first-of-type {
+  border-left: 1px solid black;
+}
+
+.apple-top-menu ul li {
+  float: left;
+  width: 30px;
+  height: 29px;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  background-color: lightgrey;
+}
+
+.apple-top-menu ul li:hover {
+  background-color: grey;
+}
+
+.apple-top-menu ul li:last-of-type:hover {
+  color: white;
+  background-color: rgb(221, 0, 0);
+}
+
+.apple h2 {
+  padding-left: 22px;
+  padding-bottom: 20px;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif
+}
+
+.apple-content {
+  max-width: 90%;
+  height: 300px;
+  margin: auto;
+  overflow: auto;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.apple-footer {
+  padding: 5px;
+  margin: 10px 0px 25px;
+}
+
+.apple-footer ul {
+  list-style-type: none;
+}
+
+.apple-footer ul li {
+  float: right;
+  margin: 5px;
+  padding: 0px 15px;
+  border: 2px groove black;
+  border-radius: 7px;
+  background-color: rgb(190, 190, 190);
+}
+
+.apple-footer ul li:hover {
+  background-color: rgb(210, 210, 210);
+}
+
+.apple-footer ul li:first-of-type {
+  float: left;
+  position: absolute;
+  left: 10px;
+}
+
+/* Other stuff */
